@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo de Desarrollo - Frontend Team Cards</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-img-custom {
+            height: 250px;
+            object-fit: cover;
+        }
+        .btn-purple {
+            background-color: #6f42c1;
+            color: #fff;
+        }
+        .btn-purple:hover {
+            background-color: #59359a;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Team Cards</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="py-5 text-center bg-white border-bottom mb-4">
+        <div class="container">
+            <h1 class="fw-bold text-dark">Nuestro Equipo de Desarrollo</h1>
+            <p class="lead text-muted mb-0">Presentación de integrantes y perfiles profesionales</p>
+        </div>
+    </header>
+
+    <!-- Main Content: Cards Container -->
+    <main class="container mb-5 flex-grow-1">
+        <div class="row g-4 justify-content-center" id="team-cards-container">
+
+            <!-- Card: Vanessa -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/vanessa.jpg" class="card-img-top card-img-custom" alt="Foto de Julieth Vanessa Mena">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold text-dark">Julieth Vanessa Mena</h5>
+                        <p class="card-subtitle mb-2 fw-semibold" style="color: #6f42c1;">Ingeniería de Software (5to Semestre)</p>
+                        <p class="card-text text-muted flex-grow-1">
+                            Estudiante interesada en desarrollo web, diseño de interfaces, bases de datos y soluciones orientadas a resolver problemas reales.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-secondary">Pasto, Nariño</span>
+                            <span class="badge bg-info text-dark">22 años</span>
+                        </div>
+                        <a href="profiles/card-vanessa.html" class="btn btn-purple w-100">Ver perfil completo</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <small>&copy; 2026 - Equipo de Desarrollo Frontend | Ejercicio Colaborativo</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
