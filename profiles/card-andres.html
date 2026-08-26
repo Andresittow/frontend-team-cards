@@ -1,47 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andres Card</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Perfil - Edison Andrés Chacua</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #0d6efd;
+        }
+    </style>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">Team Cards</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="container my-5 flex-grow-1">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-primary text-white text-center py-4">
+                        <h1 class="h3 mb-0 fw-bold">Perfil del Integrante</h1>
+                    </div>
+                    <div class="card-body p-4 p-md-5">
+                        <div class="text-center mb-4">
+                            <img src="../assets/andres.jpg" alt="Foto de Edison Andrés Chacua" class="profile-img shadow mb-3">
+                            <h2 class="h4 fw-bold text-dark mb-1">Edison Andrés Chacua</h2>
+                            <p class="text-primary fw-semibold mb-2">Ingeniería de Software - 6to Semestre</p>
+                            <span class="badge bg-secondary">21 años</span>
+                            <span class="badge bg-info text-dark">Ipiales - Nariño</span>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="mb-4">
+                            <h3 class="h5 text-primary fw-bold">Descripción Personal</h3>
+                            <p class="text-muted">
+                                Soy una persona tranquila, curiosa y con interés por aprender cosas nuevas. Me gusta trabajar en equipo, aunque también disfruto trabajar de manera independiente. Me interesa seguir mejorando mis conocimientos y adquirir experiencia en el desarrollo de software.
+                            </p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="h5 text-primary fw-bold">Intereses</h3>
+                            <p class="text-muted">
+                                Me interesan la tecnología, el desarrollo de software, la programación, los videojuegos, la animación y el diseño. También me gusta escuchar música y aprender sobre nuevas herramientas y tecnologías.
+                            </p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="h5 text-primary fw-bold">Habilidades</h3>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-light text-dark border">Trabajo en equipo</span>
+                                <span class="badge bg-light text-dark border">Resolución de problemas</span>
+                                <span class="badge bg-light text-dark border">Aprendizaje autónomo</span>
+                                <span class="badge bg-light text-dark border">Pensamiento lógico</span>
+                                <span class="badge bg-light text-dark border">Organización</span>
+                                <span class="badge bg-light text-dark border">Adaptación a nuevas herramientas</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="h5 text-primary fw-bold">Tecnologías</h3>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary">HTML</span>
+                                <span class="badge bg-primary">CSS</span>
+                                <span class="badge bg-primary">Java</span>
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-primary">Django</span>
+                                <span class="badge bg-primary">Git</span>
+                                <span class="badge bg-primary">GitHub</span>
+                                <span class="badge bg-primary">Bootstrap</span>
+                                <span class="badge bg-primary">Bases de datos</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="h5 text-primary fw-bold">Dato Adicional</h3>
+                            <p class="text-muted">
+                                Me interesa combinar la tecnología con áreas creativas, especialmente la animación y el desarrollo de proyectos digitales.
+                            </p>
+                        </div>
+
+                        <div class="text-center pt-3">
+                            <a href="../index.html" class="btn btn-outline-primary px-4 py-2">Volver al Inicio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <small>&copy; 2026 - Equipo de Desarrollo Frontend | Ejercicio Colaborativo</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
